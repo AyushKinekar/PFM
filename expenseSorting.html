@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Sorting</title>
+    <link rel="stylesheet" href="expenseSorting.css">
+</head>
+<body>
+    <nav>
+        <a href="budgetTracker.html">Budget Tracker</a>
+        <a href="expenseSorting.html">Expense Sorting</a>
+        <a href="savingsGoals.html">Savings Goals</a>
+        <a href="debtManagement.html">Debt Management</a>
+    </nav>
+    <div class="container">
+        <h2>Expense Sorting</h2>
+        <label for="expenses">Enter Expenses:</label>
+        <input type="text" id="expenses" placeholder="Enter expenses (comma-separated values)">
+        <button onclick="sortExpenses()">Sort Expenses</button>
+        <div id="sortResult" class="result"></div>
+        <br>
+    <div class="example">
+        <h3>Example:</h3>
+        <p><strong>Expenses:</strong> ₹500, ₹700, ₹4000, ₹200, ₹1000</p>
+        <p><strong>Sorted Expenses:</strong> ₹200, ₹500, ₹700, ₹1000,₹4000</p>
+    </div>
+    </div>
+    <script src="expenseSorting.js"></script>
+</body>
+</html>

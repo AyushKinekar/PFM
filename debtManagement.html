@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Management</title>
+    <link rel="stylesheet" href="debtManagement.css">
+</head>
+<body>
+    <nav>
+        <a href="budgetTracker.html">Budget Tracker</a>
+        <a href="expenseSorting.html">Expense Sorting</a>
+        <a href="savingsGoals.html">Savings Goals</a>
+        <a href="debtManagement.html">Debt Management</a>
+    </nav>
+    <div class="container">
+        <h2>Debt Management</h2>
+        <label for="debtAmounts">Debt Amounts:</label>
+        <input type="text" id="debtAmounts" placeholder="Enter debt amounts (comma-separated)">
+
+        <label for="monthlyRepayment">Monthly Repayment:</label>
+        <input type="number" id="monthlyRepayment" placeholder="Enter monthly repayment amount">
+
+        <button onclick="manageDebt()">Calculate Debt Plan</button>
+        <div id="debtResult" class="result"></div>
+        <br>
+        <div class="example">
+            <h3>Example:</h3>
+            <p><strong>Debt Amounts:</strong> ₹30000, ₹15000, ₹20000</p>
+            <p><strong>Monthly Repayment:</strong> ₹5000</p>
+            <p><strong>Output:</strong> With a total debt of ₹65000.00, and a monthly repayment of ₹5000.00, it will take approximately 13 months to repay all debts. </p>
+        </div>
+    </div>
+    <script src="debtManagement.js"></script>
+</body>
+</html>

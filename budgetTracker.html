@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="budgetTracker.css">
+</head>
+<body>
+    <nav>
+        <a href="budgetTracker.html">Budget Tracker</a>
+        <a href="expenseSorting.html">Expense Sorting</a>
+        <a href="savingsGoals.html">Savings Goals</a>
+        <a href="debtManagement.html">Debt Management</a>
+    </nav>
+    <div class="container">
+        <h2>Budget Tracker</h2>
+        <label for="income">Monthly Income:</label>
+        <input type="number" id="income" placeholder="Enter your monthly income">
+
+        <label for="essentialExpenses">Essential Expenses:</label>
+        <input type="text" id="essentialExpenses" placeholder="Enter essential costs (comma-separated values)">
+
+        <label for="nonEssentialExpenses">Non-Essential Expenses:</label>
+        <input type="text" id="nonEssentialExpenses" placeholder="Enter non-essential costs (comma-separated values)">
+
+        <button onclick="optimizeBudget()">Optimize Budget</button>
+        <div id="result" class="result"></div>
+    <br>
+    <div class="example">
+        <h3>Example:</h3>
+        <p><strong>Monthly Income:</strong> ₹50,000</p>
+        <p><strong>Essential Expenses:</strong> ₹20,000 (Rent, Utilities, Groceries)</p>
+        <p><strong>Non-Essential Expenses:</strong> ₹5,000, ₹7000, ₹40,000 (Dining, Entertainment, Shopping)</p>
+        <p><strong>Optimized Budget Output:</strong> <br>Maximum Savings: ₹18000.00, <br>Recommended Non-Essential Expenses: 7000, 5000</p>
+    </div>
+</div>
+    <script src="budgetTracker.js"></script>
+</body>
+</html>
